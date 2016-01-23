@@ -40,6 +40,37 @@
     make
     
     sudo make install
+
  5 - Testing:
  
     rcsoccersim3d
+
+### taurasim
+
+ 1 - Install the necessary tools:
+ 
+    sudo apt-get install python3 git
+ 
+ 2 - Install the necessary library:
+ 
+    sudo apt-get install python3-dev python3-numpy libsdl-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsmpeg-dev libportmidi-dev libavformat-dev libswscale-dev libjpeg-dev libfreetype6-dev
+
+ 3 - Download Pygame in your home directory (necessary to run TauraSim):
+
+    git clone https://bitbucket.org/pygame/pygame
+    
+    cd pygame
+ 
+ 4 - Build and Install Pygame
+ 
+    python3 setup.py build
+    
+    python3 setup.py install
+ 
+ 5 - Download TauraSim:
+
+    git clone https://gitlab.com/SplinterFM/TauraSim.git
+ 
+ 6 - Testing:
+ 
+    python3 WorldSimulation.py
